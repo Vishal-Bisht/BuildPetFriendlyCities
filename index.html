@@ -385,6 +385,12 @@
     <section class="pets">
       <div class="container">
         <h2 class="section-title">Featured Pets for Adoption 🐾</h2>
+        <div class="carousel-nav carousel-nav-left" aria-label="Scroll left" tabindex="0">
+          <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="carousel-nav carousel-nav-right" aria-label="Scroll right" tabindex="0">
+          <i class="fas fa-chevron-right"></i>
+        </div>
         <div class="pets-carousel">
           <div class="pet-card">
             <div class="pet-img">
@@ -587,6 +593,32 @@
 
       document.querySelectorAll(".animate").forEach((el) => {
         observer.observe(el);
+      });
+
+      // Carousel navigation for mobile
+      function scrollCarousel(direction) {
+        const carousel = document.querySelector('.pets-carousel');
+        const card = carousel.querySelector('.pet-card');
+        if (!card) return;
+        const scrollAmount = card.offsetWidth + 25; // 25px gap
+        if (direction === 'left') {
+          carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        } else {
+          carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        }
+      }
+      document.querySelector('.carousel-nav-left').addEventListener('click', function() {
+        scrollCarousel('left');
+      });
+      document.querySelector('.carousel-nav-right').addEventListener('click', function() {
+        scrollCarousel('right');
+      });
+      // Keyboard accessibility
+      document.querySelector('.carousel-nav-left').addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') scrollCarousel('left');
+      });
+      document.querySelector('.carousel-nav-right').addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') scrollCarousel('right');
       });
     </script>
   </body>
