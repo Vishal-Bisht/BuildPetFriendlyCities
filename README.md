@@ -23,7 +23,7 @@ BuildPetFriendlyCities is a campaign website designed to promote and support the
 1. **Clone or Download the Repository**
    - Download the ZIP or clone the repo:
      ```
-     git clone <your-repo-url>
+     git clone https://github.com/Vishal-Bisht/BuildPetFriendlyCities
      ```
 
 2. **Open the Project**
