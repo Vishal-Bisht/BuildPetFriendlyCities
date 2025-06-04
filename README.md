@@ -1,42 +1,37 @@
-# BuildPetFriendlyCities
+# BuildPetFriendlyCities Campaign Website
 
-BuildPetFriendlyCities is a modern, visually appealing campaign website dedicated to making urban spaces more pet-friendly. The site features:
+## Project Overview
 
-- A beautiful hero section and campaign overview
-- Information about what makes a city pet-friendly
-- Challenges and care initiatives for animal protection
-- Volunteer sign-up form
-- Featured pet adoption carousel
-- Stylish, responsive design with custom fonts
+BuildPetFriendlyCities is a campaign website designed to promote and support the creation of pet-friendly cities. The site features information about the campaign, challenges faced by pet owners, volunteer opportunities, a carousel of adoptable pets, and contact information for multiple city offices. The design emphasizes modern aesthetics, accessibility, and mobile responsiveness.
 
 ## Features
-- Fully responsive and mobile-friendly
-- Animated sections and smooth scrolling
-- Font Awesome icons and Google Fonts for a modern look
-- Easy to customize and extend
+- **Modern, Responsive Design:** Clean layout with stylish Google Fonts (Lobster, Pacifico, Roboto Slab) and visually appealing color palette.
+- **Pet Adoption Carousel:** Browse adoptable pets with images, stats, and navigation (including mobile-friendly left/right buttons).
+- **About & Challenges Sections:** Learn about the campaign and the challenges faced by pet owners in urban environments.
+- **Volunteer Form:** Users can sign up to volunteer and support the campaign.
+- **Contact & Office Info:** Footer includes multiple office addresses and a list of upcoming cities.
+- **Accessibility:** Semantic HTML, keyboard navigation for carousel, and good color contrast.
+
+## Technologies Used
+- HTML5
+- CSS3 (with custom properties and responsive design)
+- Google Fonts
+- JavaScript (for carousel navigation)
 
 ## Setup Instructions
 
 1. **Clone or Download the Repository**
-   - Download the project folder to your computer.
+   - Download the ZIP or clone the repo:
+     ```
+     git clone <your-repo-url>
+     ```
 
 2. **Open the Project**
-   - Navigate to the project folder (`BuildPetFriendlyCities`).
-   - Open `index.html` in your preferred web browser (double-click or right-click and choose "Open with").
+   - Open the folder in your preferred code editor (e.g., VS Code).
 
-3. **No Build Tools Required**
-   - This project is 100% static HTML and CSS. No installation or build steps are needed.
+3. **Run the Website**
+   - Simply open `index.html` in your web browser. No build steps or dependencies are required.
 
-4. **Customize (Optional)**
-   - Edit `index.html` to update content, images, or links.
-   - Edit `style.css` to change colors, fonts, or layout.
-
-## Dependencies
-- [Font Awesome](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css) (CDN)
-- [Google Fonts: Poppins, Montserrat, Lobster, Pacifico, Roboto Slab](https://fonts.google.com/) (CDN)
-
-## Screenshots
-Add your own screenshots here to showcase the site!
-
-## License
-This project is for educational and campaign purposes. Feel free to use and modify for your own pet-friendly initiatives.
+4. **Customize Content**
+   - Update pet information, office addresses, or other content directly in `index.html`.
+   - Adjust styles in `style.css` as needed.
